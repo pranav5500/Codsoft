@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#calculatorBody{
+    background-color: black;
+    width: 22em;
+    height: 460px;
+    border-radius: 3%;
+    box-shadow: 4px 2px 9px rgb(2, 2, 43);
+}
+input{
+    width: 97%;
+    margin: 2px;
+    height: 60px;
+    background-color: transparent;
+    border-radius: 7%;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: aliceblue;
+}
+input[type="text"]{
+    text-align: right;
+}
+button{
+    border: none;
+    width: 18%;
+    height: 60px;
+    margin: 6px;
+    margin-top: 5px;
+    border-radius: 50%;
+    background-color: rgb(19, 20, 20);
+    cursor: pointer;
+    color: aliceblue;
+    font-size: 20px;
+    box-shadow: 4px 2px 9px blue;
+}
+#ACBtn{
+    color: rgb(0, 255, 42);
+}
+#equalBtn{
+    background-color: orangered;
+}

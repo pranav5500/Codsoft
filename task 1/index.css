@@ -1,0 +1,177 @@
+/* Reset default margin and padding */
+body, h1, h2, h3{
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin-top: 5px;
+}
+/* Set a background color and text color for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Style the header */
+header {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8zQIZAu1rJT4rH7YIhdurpzoT1AEVDxYU72pJbKc7-YK-g7-7qFNYgGIgSgeay3niqI0&usqp=CAU);
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+}
+
+/* Style the logo in the header */
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Style the navigation links in the header */
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style the main section */
+.main {
+    background-image: url(https://img.freepik.com/free-vector/gradient-blue-background_23-2149333531.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 115px 0;
+    margin: 3px;
+}
+
+.main-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.main h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.main p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Style the call to action button */
+.btn {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Style the features section */
+.features {
+    text-align: center;
+    padding: 84px 0;
+}
+.feature {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+.feature:hover{
+    transform: scale(1.1);
+}
+#feature1{
+    background-image: url(https://contentstatic.techgig.com/photo/90325682.cms);
+    background-repeat: no-repeat;
+    background-size: 302px 10em;
+    width: 250px;
+    height: 7em;
+    color: whitesmoke;
+}
+#feature2{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC0Tcrsbk0xE6zQ8NjevvL8QYSEZPYnk1ZZA&usqp=CAU);
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 7em;
+    color: whitesmoke;
+}
+#feature3{
+    background-image: url(https://blog.eduonix.com/wp-content/uploads/2015/11/C-3-More-on-C-Syntax.png);
+    background-size: 302px 10em;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 7em;
+    color: whitesmoke;
+}
+
+/* Style the about section */
+.about {
+    background-image: url(https://wallpaperboat.com/wp-content/uploads/2019/10/best-background-for-website-11.jpg);
+    padding: 68px 0;
+    text-align: center;
+    color: antiquewhite;
+}
+
+/* Style the contact section */
+.contact {
+    background-color: #f2f2f2;
+    padding: 47px 0;
+    text-align: center;
+}
+
+/* Style the form inputs and textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the submit button */
+form button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

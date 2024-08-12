@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stle.css">
+    <title>Document</title>
+</head>
+<body>    
+    <header>
+        <nav class="navbar">
+            <ul> 
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero">
+        <div id="home">
+            <p>
+                Hello,it's Me<br>
+                <span>Pranav  </span><br>
+                And I'm a <br><div id="text"></div>
+            </p>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var textContainer = document.getElementById('text');
+                    var textArray = ["frontend developer","backend developer", "programmer"];
+                    var index = 0;
+        
+                    function changeText() {
+                        var text = textArray[index];
+                        typeWriter(text, 0);
+                        index = (index + 1) % textArray.length;
+                    }
+        
+                    function typeWriter(text, i) {
+                        if (i < text.length) {
+                            textContainer.textContent = text.substring(0, i + 1);
+                            setTimeout(function() {
+                                typeWriter(text, i + 1);
+                            }, 100);
+                        }
+                    }      
+                    setInterval(changeText, 4000); // Change text every 4 seconds
+                });
+            </script>
+                <img src="IMG_20240813_011653-removebg.png" alt="image">
+        </div>
+    </div>
+    <div class="downloadCV">
+        <button>
+            Download CV
+        </button>
+    </div>
+    <div class="about" id="about">
+        <h1>About Me</h>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus perferendis deleniti quaerat, nesciunt dolorem beatae a quidem, sequi quia ea eligendi facere veritatis ipsum maxime ipsa qui consectetur, cum voluptates!
+            </p>
+    </div>
+    <div class="skills" id="skills"> 
+        <h1>
+            Skills:
+        </h1>
+        <ul>
+            <li>HTML<span class="skill" id="skill1"><span class="border"><span class="percentage" id="percentage1"></span></span></li></span>
+            <li>CSS<span class="skill" id="skill2"><span class="border"><span class="percentage" id="percentage2"></span></span></li></span>
+            <li>JavaScript<span class="skill" id="skill3"><span class="border"><span class="percentage" id="percentage3"></span></span></li></span>
+            <li>Problem Solving<span class="skill" id="skill4"><span class="border"><span class="percentage" id="percentage4"></span></span></li></span>
+            <li>Java<span class="skill" id="skill5"><span class="border"><span class="percentage" id="percentage5"></span></span></li></span>
+        </ul>
+    </div>
+    <div class="contact"id="contact"> 
+        <h2> 
+            Contact Me :
+        </h2>
+        <form>
+            <input type="text" name="" id="" placeholder="Your Name" ><br>
+            <input type="text" name="" id="" placeholder="Phone Number" ><br>
+            <input type="text" name="" id="" placeholder="Email id" ><br>
+            <input type="text" name="" id="" placeholder="Message" ><br>
+            <input type="submit" id="submit" value="submit">
+        </form>
+    </div>
+</body>
+</html>
